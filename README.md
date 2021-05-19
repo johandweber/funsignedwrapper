@@ -69,7 +69,13 @@ The test programs further require a C99 comforming C compiler where the typedefs
 
 The Module has been tested with `gfortran` and `gcc` 9.3 on an AMD64 system.
 
-## TODOS 
+## Prblems and TODOS 
+
+* The performance currently is _very_ poor (approximately two orders of magnitude 
+  slower than the suggestions in https://fortran-lang.discourse.group/t/module-for-dealing-with-unsigned-integers-in-standard-fortran/1242/3.
+  So the conversion large unsingned ==> small signed should only be used if readability
+  is much more important than performance.
+ 
 
 * Compiling the code will fail if one of the integer sizes 8, 16, 32 or 64 bit
   is not available.
