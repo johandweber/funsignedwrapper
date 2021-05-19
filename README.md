@@ -72,9 +72,11 @@ The Module has been tested with `gfortran` and `gcc` 9.3 on an AMD64 system.
 ## Prblems and TODOS 
 
 * The performance currently is _very_ poor (approximately two orders of magnitude 
-  slower than the suggestions in https://fortran-lang.discourse.group/t/module-for-dealing-with-unsigned-integers-in-standard-fortran/1242/3.
-  So the conversion large unsingned ==> small signed should only be used if readability
-  is much more important than performance.
+  slower than the suggestions to use Fortran's built-in KIND functions ()
+  in https://fortran-lang.discourse.group/t/module-for-dealing-with-unsigned-integers-in-standard-fortran/1242/3.
+  So the conversion large signed ==> small unsigned should only use the functions of this module
+  if readability is much more important than performance. 
+  The functions for the conversion small unsigned ==> large unsigned may be more useful. 
  
 
 * Compiling the code will fail if one of the integer sizes 8, 16, 32 or 64 bit
