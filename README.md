@@ -69,7 +69,7 @@ The test programs further require a C99 comforming C compiler where the typedefs
 
 The Module has been tested with `gfortran` and `gcc` 9.3 on an AMD64 system.
 
-## Prblems and TODOS 
+## Problems and TODOS 
 
 * The performance currently is _very_ poor (approximately two orders of magnitude 
   slower than the suggestions to use Fortran's built-in KIND functions ()
