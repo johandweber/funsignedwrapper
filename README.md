@@ -82,10 +82,8 @@ The Module has been tested with `gfortran` and `gcc` 9.3 on an AMD64 system.
 * Compiling the code will fail if one of the integer sizes 8, 16, 32 or 64 bit
   is not available.
   
-  If a value is passed to a function that does not " fit" into the samller variable,
+  If a value is passed to a function that does not " fit" into the smaller unsigned variable,
   a modulo operation is performed and no error flag is set.
-  
-* The code is not optimized for high performance.  
 
 * Cleanup of the `Makefile`.
 
