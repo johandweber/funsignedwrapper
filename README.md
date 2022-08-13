@@ -23,7 +23,7 @@ that try to address the problem in an easier readable way.
 
 `intX_to_uintY` stores the numerical value of a larger (i.e., stored
 using Y bits) integer in a smaller (signed) integer variable (stored using X
-bits) using bit pattern that corresponds to a (C-type) unsigned variable
+bits) using a bit pattern that corresponds to a (C-type) unsigned variable
 of the same size.
 
 Here `Y` > `X`.
@@ -61,7 +61,7 @@ that output whether the comversions lead to the expected results.
 The module requires a Fortran compiler that supports the constants `int8`, `int16`,
 `int32` and `int64` in the module `iso_fortran_env`.
 This is the case for all compilers comforming to the Fortran 2008
-standard but may also be supported by Compilers that otherwise do not fully support
+standard, but may also be supported by Compilers that otherwise do not fully support
 Fortran 2008.
 
 The test programs further require a C99 comforming C compiler where the typedefs
