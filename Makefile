@@ -22,15 +22,15 @@ LINK = -o
 # Command to delete files
 REMOVE = rm
 
-FUNSIGNEDWRAPPER_F08 = funsignedwrapper.f08
+FUNSIGNEDWRAPPER_F90 = funsignedwrapper.f90
 
-WRITE_FORTRAN_OUTPUT_F08 = write_fortran_output.f08
+WRITE_FORTRAN_OUTPUT_F90 = write_fortran_output.f90
 
 READ_FORTRAN_OUTPUT_C   = read_fortran_output.c
 
 WRITE_C_OUTPUT_C = write_c_output.c
 
-READ_C_OUTPUT_F08 = read_c_output.f08
+READ_C_OUTPUT_F90 = read_c_output.f90
 
 FUNSIGNEDWRAPPER_OBJ = funsignedwrapper$(OBJEXT)
 
